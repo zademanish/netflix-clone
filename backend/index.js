@@ -1,5 +1,3 @@
-//step-1
-// const express = require("express");
 import express from "express";
 import dotenv from "dotenv";
 import databaseConnection from "./utils/database.js";
@@ -19,7 +17,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use(cookieParser());
 const corsOptions = {
-    origin:'netflix-clone-git-main-manish-zades-projects.vercel.app',
+    origin:'https://netflix-clone-git-master-manish-zades-projects.vercel.app/',
     credentials:true
 }
 app.use(cors(corsOptions));
