@@ -32,6 +32,9 @@ app.use(cors({
 // api
 app.use("/api/v1/user", userRoute);
 
+app.get('/',(req,res)=>{
+    res.send('helo')
+})
 app.listen(process.env.PORT,() => {
     console.log(`Server listen at port ${process.env.PORT}`);
 });
