@@ -17,9 +17,9 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use(cookieParser());
 const corsOptions = {
-    origin:'https://netflix-clone-tau-flax-18.vercel.app',
-    methods:['GET','POST'],
-    credentials:true
+    origin: 'https://netflix-clone-tau-flax-18.vercel.app', // Frontend URL
+    methods: 'GET,POST,PUT,DELETE',
+    allowedHeaders: 'Content-Type,Authorization'
 }
 app.use(cors(corsOptions));
  
