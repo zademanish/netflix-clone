@@ -48,7 +48,7 @@ const Header = () => {
       <div>
         {user && (
           <div className="flex items-center">
-            <IoIosArrowDropdown size="24px" color="white" />
+            <IoIosArrowDropdown size="23px" color="white" />
             <h1 className="md:text-lg font-medium text-white text-sm">
               {user.fullName}
             </h1>
